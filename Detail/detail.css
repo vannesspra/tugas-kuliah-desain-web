@@ -1,0 +1,304 @@
+@font-face /*perintah untuk memanggil font eksternal*/ {
+    font-family: "japanese"; /*memberikan nama bebas untuk font*/
+    src: url("../Font/manga-temple/mangat.ttf"); /*memanggil file font eksternalnya di folder nexa*/
+  }
+body{
+    background-image: url("/Photo/watercolor.png");
+}
+header{
+    margin-left: -15px;
+    grid-area: header;
+}
+.container{
+    width: 95%;
+    height: 700px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-template-columns: 300px 900px;
+    grid-template-areas: 
+    'header header'
+    'polar name'
+    'polar desc'
+    'bio rent'
+    'footer footer'
+    ;
+    padding: 25px;
+    margin: auto;
+    margin-top: -40px;
+}
+.polar{
+    margin: 20px;
+    grid-area: polar;
+    background-color: white;
+    border: 3px solid black;
+}
+.polar img{
+    margin: 25px;
+    margin-bottom: 2px;
+}
+.polar .img{
+    width: 100%;
+    height: auto;
+}
+#slider {
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 350%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+.polar p, button, img{
+    margin: 5px;
+    margin-left: 13px;
+}
+
+.name{
+    margin: 20px;
+    padding-left: 5%;
+    width: 50%;
+    height: auto;
+    grid-area: name;
+    background-color: rgba(255, 192, 203, 0.664);
+    color: rgb(255, 255, 255);
+    font-family: japanese;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    border-radius: 50px;
+    text-shadow:2px 2px black;
+}
+.desc{
+    margin: 20px;
+    padding: 2%;
+    grid-area: desc;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    border: 2px solid black;
+}
+.bio{
+  margin: 20px;
+  margin-top: 5px;
+  grid-area: bio;
+  background-color: rgba(255, 192, 203, 0.664);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height:65%;
+}
+.bio ul{
+  margin-left: -20px;
+}
+.bio li{
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.rent{
+    margin: auto;
+    height: auto;
+    width: 560px;
+    grid-area: rent;
+}
+.kotak{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rent .button{
+    margin: 5px;
+    background-color: rgb(123, 255, 0);
+    height: 40%;
+    padding: 2%;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px; 
+    border: 1px solid darkgreen;
+    
+}
+.rent .button a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: bold;
+}
+.rent .button:hover{
+    background-color: rgba(110, 221, 6, 0.863);
+}
+.video{
+  margin-top: 10px;
+  height: 300px;
+}
+iframe{
+  width: 550px;
+  height: 280px;
+}
+footer{
+  margin-top: 30px;
+  height: 30px;
+  background-color: rgb(255, 213, 220);
+  justify-content: center;
+  font-family: "Open Sans";
+  text-align: center;
+  padding: 10px 0;
+  grid-area: footer;
+}
+footer p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+footer span{
+text-transform: uppercase;
+opacity: .4;
+font-weight: 200;
+}
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #fff;
+    animation: loader 2s infinite ease;
+  }
+  
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(180deg);
+    }
+  
+    50% {
+      transform: rotate(180deg);
+    }
+  
+    75% {
+      transform: rotate(360deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+  
+    25% {
+      height: 0%;
+    }
+  
+    50% {
+      height: 100%;
+    }
+  
+    75% {
+      height: 100%;
+    }
+  
+    100% {
+      height: 0%;
+    }
+  }
+@media only screen and (max-width: 570px){
+  .container{
+    margin-left: 210px;
+    grid-template-columns: 300px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      'header'
+      'name'
+      'polar'
+      'desc'
+      'bio'
+      'rent'
+      'footer';
+  }
+  .name{
+    width: 300px;
+    margin-left: -4%;
+    text-align: center;
+  }
+  .desc{
+    width: 450px;
+    margin-left: -80px;
+  }
+  .bio{
+    height: 240px;
+  }
+  header{
+    text-align: center;
+  }
+  .rent{
+    width: 240px;
+  }
+  footer{
+    width: 570px;
+    margin-left: -140px;
+    margin-top: -60px;
+  }
+  .video{
+    margin-left: -80px;
+    margin-top: 20px;
+  }
+  iframe{
+    width: 400px;
+    height: 200px;
+  }
+}

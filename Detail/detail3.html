@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hana Shirosaki</title>
+    <link rel="stylesheet" href="detail.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+          <a href="../menu.html"><img width="300" src="/Photo/MicrosoftTeams-image.png"></a>
+        </header>
+        <div class="polar">
+        <div class="img">
+            <div id="slider">
+                <figure>
+                    <img src="/Photo/Hana Shirosaki/Shirosaki.jpg">
+                    <img src="/Photo/Hana Shirosaki/Shirosaki2.jpg">
+                    <img src="/Photo/Hana Shirosaki/Shirosaki3.jpg">
+                </figure>
+            </div>
+        </div>
+        <p>
+          &#11088;&#11088;&#11088;&#11088;&#11088;
+        </p>
+
+        <audio id="audioMusic">
+          <source src="/Audio/7.mp3" type="audio/mpeg" />
+        </audio>
+
+        <button onclick="bell()">Watashi~</button>
+
+        <script>
+          var audio = document.getElementById("audioMusic");
+          function bell() {
+            audio.play();
+          }
+        </script>
+        </div>
+
+      <div class="name">
+        <p>Hana Shirosaki</p>
+      </div>
+      <div class="desc">
+          Hana Shirosaki is one of the main characters from the Watashi 
+          ni Tenshi ga Maiorita! series.
+          She is the only daughter of Haruka 
+          Shirosaki and is one of Hinata Hoshino's friends.
+          She is usually seen in her school uniform, which is a long navy blue dress with a red bow, white sleeves, a navy blue striped collar, white tights and brown shoes.
+      </div>
+      <div class="bio">
+        <ul>
+          <li><b>Native Name</b>: 白咲花 </li>
+          <li><b>Birth</b>: 7 Maret 2006</li>
+          <li><b>Zodiac</b>: Pisces</li>
+          <li><b>Height</b>: 142cm</li>
+          <li><b>Weight</b>: 38kg</li>
+          <li><b>Food</b>: Pudding</li>
+        </ul>
+      </div>
+      <div class="rent">
+        <div class="kotak">
+          <div class="button">
+            <a href="detail2/det3.html">Permanent</a>
+          </div>
+          <div class="button">
+            <a href="detail3/det3.html">Temporary</a>
+          </div>
+        </div>
+
+        <div class="video">
+          <iframe width="550" height="280" src="https://www.youtube.com/embed/AKK4TgHrSz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+      <footer>
+        <p>copyright &copy;2021 World Of Waifu. designed by <span>Wijaya Company</span></p>
+      </footer>
+    </div>
+    
+    
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  
+    <script>
+        $(window).on("load", function(){
+            $(".loader-wrapper").fadeOut(2000);
+        });
+    </script>
+  </body>
+</html>

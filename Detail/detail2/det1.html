@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashiro Shiina</title>
+    <link rel="stylesheet" href="det.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="glowing">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+    </div>
+    <div class="glowing">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+    </div>
+    <div class="glowing">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+    </div>
+    <div class="glowing">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+    </div>
+    
+    <div class="app-container">
+
+        <div class="top-box">
+            <p><a href="../detail.html"><span class="left-icon">&#8592;</span></a>CHECKOUT<span class="right-icon">&#xb7;&#xb7;&#xb7;</span></p>
+        </div>
+
+        <div class="middle-box">
+            <h1>2888<span>$</span></h1>
+            <p>Pay to <b>Wijaya</b> Company Ltd</p>
+        </div>
+
+        <form action="#link" method="post">
+            <div class="bottom-box">
+                <button type="button" class="payment-option-btn">Mashiro Shiina</button>
+                <select class="payment-option-btn">
+                    <option disabled hidden selected>Rent</option>
+                    <option>Permanent</option>
+                </select>
+            </div>
+    
+            <div class="card-details">
+                <p>Pay</p>
+                <div class="card-num-field-group">
+                    <label>Card Number</label><br>
+                    <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+                </div>
+                <div class="date-field-group">
+                    <label>Expiry Date</label><br>
+                    <input type="text" class="date-field" placeholder="mm">
+                    <input type="text" class="date-field" placeholder="yyyy">
+                </div>
+    
+                <div class="cvc-field-group">
+                    <label>CVC</label><br>
+                    <input type="password" class="cvc-field" placeholder="xxx">
+                </div>
+    
+                <div class="name-field-group">
+                    <label>Card Holder Name</label><br>
+                    <input type="text" class="name-field" placeholder="full name" required>
+                </div>
+
+                <input size="280px" class="pay-btn" type="reset" value="PayNow" onclick="function1()">
+        </form>
+            <script>
+                function function1(){
+                  alert("Sudah cukup Halu nya wahai teman ku, Mashiro Shiina hanya 2D")
+                }
+              </script>
+        </div>
+    </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  
+    <script>
+        $(window).on("load", function(){
+            $(".loader-wrapper").fadeOut(2000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rem</title>
+    <link rel="stylesheet" href="detail.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+          <a href="../menu.html"><img width="300" src="/Photo/MicrosoftTeams-image.png"></a>
+        </header>
+        <div class="polar">
+        <div class="img">
+            <div id="slider">
+                <figure>
+                    <img src= "/Photo/Rem/Rem.jpg">
+                    <img src= "/Photo/Rem/Rem2.jpg">
+                    <img src= "/Photo/Rem/Rem3.jpg">
+                </figure>
+            </div>
+        </div>
+        <p>
+          &#11088;&#11088;&#11088;
+        </p>
+
+        <audio id="audioMusic">
+          <source src="/Audio/10.mp3" type="audio/mpeg" />
+        </audio>
+
+        <button onclick="bell()">Baka~</button>
+
+        <script>
+          var audio = document.getElementById("audioMusic");
+          function bell() {
+            audio.play();
+          }
+        </script>
+        </div>
+
+      <div class="name">
+        <p>Rem</p>
+      </div>
+      <div class="desc">
+        Rem has medium length sky blue hair that covers her right eye, large light blue eyes, and young features. She also has hair clips towards the left side of her hair, a flower-shaped ribbon on the same side of her hair, and a maid hairband. She looks nearly identical to her sister apart from her hair, eyes, and ribbon colouring. She usually wears a maid uniform, and since her chest is slightly larger than her sister's.
+      </div>
+      <div class="bio">
+        <ul>
+          <li><b>Native Name</b>: レム</li>
+          <li><b>Birth</b>: 2 February</li>
+          <li><b>Zodiac</b>: Libra</li>
+          <li><b>Height</b>: 154cm</li>
+          <li><b>Weight</b>: Unknown</li>
+          <li><b>Hobby</b>: Watching Subaru's sleeping face.</li>
+        </ul>
+      </div>
+      <div class="rent">
+        
+        <div class="kotak">
+          <div class="button">
+            <a href="detail2/det10.html">Permanent</a>
+          </div>
+          <div class="button">
+            <a href="detail3/det10.html">Temporary</a>
+          </div>
+        </div>
+
+        <div class="video">
+          <iframe width="550" height="280" src="https://www.youtube-nocookie.com/embed/Tsxp6MLULfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <footer>
+        <p>copyright &copy;2021 World Of Waifu. designed by <span>Wijaya Company</span></p>
+      </footer>
+    </div>
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    <script>
+        $(window).on("load", function(){
+            $(".loader-wrapper").fadeOut(2000);
+        });
+    </script>
+  </body>
+</html>

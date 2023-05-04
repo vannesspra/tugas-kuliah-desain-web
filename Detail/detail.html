@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mashiro Shiina</title>
+    <link rel="stylesheet" href="detail.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+          <a href="../menu.html"><img width="300" src="/Photo/MicrosoftTeams-image.png"></a>
+        </header>
+
+        <div class="polar">
+        <div class="img">
+            <div id="slider">
+                <figure>
+                    <img src="/Photo/Mashiro Shina/Shiina.jpg">
+                    <img src="/Photo/Mashiro Shina/Shiina2.jpg">
+                    <img src="/Photo/Mashiro Shina/Shiina3.png">
+                </figure>
+            </div>
+        </div>
+
+        <p>
+          &#11088;&#11088;&#11088;&#11088;
+        </p>
+
+        <audio id="audioMusic">
+          <source src="/Audio/3.mp3" type="audio/mpeg" />
+        </audio>
+
+        <button onclick="bell()">Baka~</button>
+
+        <script>
+          var audio = document.getElementById("audioMusic");
+          function bell() {
+            audio.play();
+          }
+        </script>
+        </div>
+
+      <div class="name">
+        <p>Mashiro Shiina</p>
+      </div>
+      <div class="desc">
+        Mashiro's body statistics are B79/W55/H78 in centimeters and B31/W21/H30 in inches. It has been noted many times in the series that she is very beautiful and she also has a very slim physique.
+        Mashiro is an excellent artist, but is extremely terrible at everything else due to lacking any common sense. She is almost completely devoid of emotion, typically wearing a blank expression.
+      </div>
+      <div class="bio">
+        <ul>
+          <li><b>Native Name</b>: 椎名 / ましろ</li>
+          <li><b>Birth</b>: 13 June 2004</li>
+          <li><b>Zodiac</b>: Gemini</li>
+          <li><b>Height</b>: 162cm</li>
+          <li><b>Weight</b>: 45kg</li>
+          <li><b>Hobby</b>: Bekerja</li>
+          <li><b>Food</b>: Burger</li>
+        </ul>
+      </div>
+      <div class="rent">
+        
+        <div class="kotak">
+          <div class="button">
+            <a href="detail2/det1.html">Permanent</a>
+          </div>
+          <div class="button">
+            <a href="detail3/det1.html">Temporary</a>
+          </div>
+        </div>
+
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/C06Y76IDNoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <footer>
+        <p>copyright &copy;2021 World Of Waifu. designed by <span>Wijaya Company</span></p>
+      </footer>
+
+    </div>
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+      $(window).on("load", function(){
+          $(".loader-wrapper").fadeOut(2000);
+      });
+    </script>
+  
+  </body>
+</html>

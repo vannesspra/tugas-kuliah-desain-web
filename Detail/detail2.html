@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ai Hinatsuru</title>
+    <link rel="stylesheet" href="detail.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+          <a href="../menu.html"><img width="300" src="/Photo/MicrosoftTeams-image.png"></a>
+        </header>
+        <div class="polar">
+        <div class="img">
+            <div id="slider">
+                <figure>
+                    <img src="/Photo/Ai Hinatsuru/Hinatsuru.jpg">
+                    <img src="/Photo/Ai Hinatsuru/Hinatsuru2.jpg">
+                    <img src="/Photo/Ai Hinatsuru/Hinatsuru3.jpg">
+                </figure>
+            </div>
+        </div>
+        <p>
+          &#11088;&#11088;&#11088;&#11088;
+        </p>
+
+        <audio id="audioMusic">
+          <source src="/Audio/5.mp3" type="audio/mpeg" />
+        </audio>
+
+        <button onclick="bell()">Onegai~</button>
+
+        <script>
+          var audio = document.getElementById("audioMusic");
+          function bell() {
+            audio.play();
+          }
+        </script>
+        </div>
+
+      <div class="name">
+        <p>Ai Hinatsuru</p>
+      </div>
+      <div class="desc">
+          Ai Hinatsuru is the main character of the series. 
+          Ai is a little girl with a very beautiful face and is always displaying a happy expression, especially when she stands beside Yaichi Kuzuryuu (Ai's master), but this expression can change when she is jealous of him or near Ginko Sora, a person for whom he did not create a strong friendly tie to her.
+      </div>
+      <div class="bio">
+        <ul>
+          <li><b>Native Name</b>: 雛鶴 / あい</li>
+          <li><b>Birth</b>: 7 October 2007</li>
+          <li><b>Zodiac</b>: Libra</li>
+          <li><b>Height</b>: 140cm</li>
+          <li><b>Weight</b>: 39kg</li>
+          <li><b>Hobby</b>: Play Shogi</li>
+        </ul>
+      </div>
+      <div class="rent">
+        <div class="kotak">
+          <div class="button">
+            <a href="detail2/det2.html">Permanent</a>
+          </div>
+          <div class="button">
+            <a href="detail3/det2.html">Temporary</a>
+          </div>
+        </div>
+
+        <div class="video">
+          <iframe width="550" height="280" src="https://www.youtube.com/embed/0YvJfrMVKss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <footer>
+        <p>copyright &copy;2021 World Of Waifu. designed by <span>Wijaya Company</span></p>
+      </footer>
+    </div>
+
+    
+  
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <script>
+      $(window).on("load", function(){
+          $(".loader-wrapper").fadeOut(2000);
+      });
+  </script>
+  </body>
+</html>

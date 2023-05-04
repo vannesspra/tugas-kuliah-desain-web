@@ -1,0 +1,235 @@
+@font-face /*perintah untuk memanggil font eksternal*/
+  {
+    font-family: 'japanese'; /*memberikan nama bebas untuk font*/
+    src: url("Font/manga-temple/mangat.ttf");/*memanggil file font eksternalnya di folder nexa*/
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.container .banner-text .button{
+    display: block;
+    text-transform: uppercase;
+}
+.banner-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: rgb(252, 153, 170);
+    font-size: 60px;
+    letter-spacing: 8px;
+    font-family: japanese;
+    animation: text 3s 1;
+
+}
+@keyframes text {
+    0%{
+        color: pink;
+    }
+    30%{
+        letter-spacing: 25px;
+    }
+    85%{
+        letter-spacing: 8px;
+    }
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 1;
+    animation: text2 3s 1;
+    margin-left: 20px;
+
+}
+@keyframes text2 {
+    0%{
+        margin-top: -80px;
+        opacity: 0;
+    }
+    30%{
+        margin-top: -80px;
+        opacity: 0;
+    }
+    85%{
+        margin-top: -80px;
+        opacity: 0;
+    }
+}
+.button a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(255, 169, 185);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 40px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+a:hover
+{   
+    color: white;
+    background: pink;
+    box-shadow: 0 0 10px pink, 0 0 40px pink, 0 0 80px pink;
+    transition-delay: 1s;
+}
+
+a span
+{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(250, 207, 214));
+}
+a:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+a span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(250, 207, 214));
+}
+a:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+a span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(250, 207, 214));
+}
+a:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+a span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(250, 207, 214));
+}
+a:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.animation-area{
+    background: radial-gradient(white, pink);
+    width: 100%;
+    height: 100vh;
+}
+.box-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    bottom: -150px;
+}
+.box-area .kiri{
+    animation: animate 20s linear infinite;
+}
+.box-area .kanan{
+    animation: animate2 20s linear infinite;
+}
+@keyframes animate2{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(-360deg);
+        opacity: 0;
+    }
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.box-area li:nth-child(1){
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 3.5s;
+}
+.box-area li:nth-child(3){
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+.box-area li:nth-child(4){
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 6.5s;
+    animation-duration: 15s;
+}
+
+
